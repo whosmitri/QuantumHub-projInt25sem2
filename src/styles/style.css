@@ -178,6 +178,8 @@ footer {
 
 /* general button */
 .btn {
+    display: inline-block;
+
     padding: 0.6rem 3rem;
 
     border-radius: 100px;
@@ -194,6 +196,22 @@ footer {
 
 .main-btn:hover {
     background-color: var(--dark1);
+
+    transform: translateY(-2px);
+}
+
+.call-action-btn {
+    background-color: var(--green1);
+
+    color: var(--dark2);
+
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.call-action-btn:hover {
+    background-color: var(--green2);
+
+    color: var(--light-gray);
 
     transform: translateY(-2px);
 }
