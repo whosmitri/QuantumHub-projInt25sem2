@@ -7,7 +7,7 @@ h2 {
     font-weight: 600;
 }
 
-#hero, #aboutUs, #howQhWorks {
+#hero, #aboutUs, #howQhWorks, #targetAudience {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -136,6 +136,38 @@ h2 {
 
 
 
+#targetAudience {
+    justify-content: center;
+    gap: 30px;
+}
+
+#targetAudienceImg {
+    order: 1;
+
+    width: 40%;
+}
+
+#targetAudienceText {
+    order: 2;
+
+    width: 30%;
+}
+
+#targetAudienceText > ul {
+    list-style: disc;
+}
+
+#targetAudienceText > ul > li {
+    margin: 0.8rem 0;
+    line-height: 1.6;
+}
+
+#targetAudienceText > ul > li > strong {
+    font-weight: 600;
+}
+
+
+
 /* RESPONSIVIDADE */
 @media (max-width: 768px) {
     #hero, #aboutUs {
@@ -169,6 +201,20 @@ h2 {
     .qh-metodos-l, .qh-metodos-d {
         width: 80%;
         padding: 5vh 6vw;
+    }
+
+    #targetAudience {
+        flex-direction: column;
+    }
+
+    #targetAudienceText {
+        order: 1;
+        width: 85%;
+    }
+
+    #targetAudienceImg {
+        order: 2;
+        width: 80%;
     }
 
 }
