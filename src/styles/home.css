@@ -7,7 +7,7 @@ h2 {
     font-weight: 600;
 }
 
-#hero, #aboutUs {
+#hero, #aboutUs, #howQhWorks {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -53,6 +53,7 @@ h2 {
 }
 
 
+
 #whyUs {
     padding: 2rem 10rem;
 
@@ -64,6 +65,75 @@ h2 {
 #whyUs > p {
     margin-top: 1.5rem;
 }
+
+
+
+.qh-metodos-container {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 15px;
+
+    margin: 1rem 0;
+}
+
+.qh-metodos-l, .qh-metodos-d {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+
+    width: 30%;
+    box-sizing: border-box;
+
+    margin: 1rem 0;
+    padding: 4vh 3vw;
+
+    border-radius: 20px;
+
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.qh-metodos-l > h3, .qh-metodos-d > h3 {
+    font-size: 13pt;
+    font-weight: 600;
+}
+
+.qh-metodos-l > p, .qh-metodos-d > p {
+    font-size: 10pt;
+}
+
+.qh-metodos-l {
+    border: 1px solid var(--dark1);
+    border-bottom: 3px solid var(--dark1);
+    
+    background-color: var(--light-green);
+    color: var(--dark1);
+}
+
+.qh-metodos-l:hover {
+    background-color: var(--dark1);
+    color: var(--light-green);
+
+    transform: translateY(-2px);
+}
+
+.qh-metodos-d {
+    background-color: var(--dark1);
+    color: var(--light-green);
+}
+
+.qh-metodos-d:hover {
+    border: 1px solid var(--dark1);
+    border-bottom: 3px solid var(--dark1);
+
+    background-color: var(--light-green);
+    color: var(--dark1);
+
+    transform: translateY(-2px);
+}
+
 
 
 /* RESPONSIVIDADE */
@@ -88,6 +158,17 @@ h2 {
         max-width: 100%;
 
         padding: 2rem 3rem;
+    }
+
+    .qh-metodos-container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .qh-metodos-l, .qh-metodos-d {
+        width: 80%;
+        padding: 5vh 6vw;
     }
 
 }
