@@ -168,6 +168,42 @@ h2 {
 
 
 
+#callAction {
+    display: flex;
+    justify-content: center;
+
+    width: 100%;
+
+    margin: 10vh 0;
+}
+
+.call-action-container {
+    width: 90%;
+    box-sizing: border-box;
+
+    padding: 6vh 5vw;
+
+    border-radius: 20px;
+
+    background-color: var(--dark1);
+
+    color: #fff;
+}
+
+.call-action-container > h3, .call-action-container > p > span {
+    color: var(--green1);
+}
+
+.call-action-container > h3 {
+    font-size: 14pt;
+}
+
+.call-action-container > p {
+    margin-bottom: 3vh;
+}
+
+
+
 /* RESPONSIVIDADE */
 @media (max-width: 768px) {
     #hero, #aboutUs {
