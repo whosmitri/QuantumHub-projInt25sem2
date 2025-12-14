@@ -11,6 +11,7 @@
 
 :root {
     --green1: #D9FF40;
+    --green2: #607C28;
     --blue1: #8BBEB2;
 
     --light-green: #E4F798;
@@ -22,7 +23,7 @@
 
     --gray: #9b9b9b;
 
-    --shadow: #00000060;
+    --shadow: #6e6e6e59;
 
     --poppins-font: 'Poppins', cursive;
 }
