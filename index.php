@@ -17,27 +17,30 @@
 <body>
     <?php include './src/pages/components/header.php'; ?>
 
-    
+    <div id="main">
     <main>
         <!-- Hero -->
         <section id="hero">
-            <div>
+            <div id="heroText">
                 <h1>Domine o próximo salto tecnológico</h1>
                 <p>A <span>QuantumHub</span> conecta você ao futuro da tecnologia com cursos, mentoria, prática real e uma comunidade preparada para evoluir. Aprenda com profundidade, avance com segurança e conquiste o protagonismo digital.</p>
-                <a><button type="button">Começar Agora</button></a>
+                <a href="./src/pages/cursos.php" class="btn main-btn">Começar Agora</a>
             </div>
-            <div>
-                <img src="./src/assets/">
+            <div id="heroImg">
+                <img src="./src/assets/images/team-goals-img.svg">
             </div>
         </section>
         <!-- End Hero -->
 
         <!-- About Us -->
         <section id="aboutUs">
-            <div>
-                <img src="./src/assets/">
+            <div id="aboutUsImg">
+                <picture>
+                    <source media="(min-width: 650px)" srcset="./src/assets/images/visionary-img.svg">
+                    <img src="./src/assets/images/visionary-img-mobile.svg">
+                </picture>
             </div>
-            <div>
+            <div id="aboutUsText">
                 <h2>O que é a <span>QuantumHub</span>?</h2>
                 <p>Somos o hub de inteligência coletiva criado para acelerar a competência de pessoas e organizações. Mais do que conteúdo, oferecemos um fluxo contínuo de inovação que transforma teoria em impacto mensurável e potencial em performance.</p>
 
@@ -107,6 +110,7 @@
         </section>
         <!-- End Call to Action -->
     </main>
+    </div>
 
 
     <?php include './src/pages/components/footer.php'; ?>
