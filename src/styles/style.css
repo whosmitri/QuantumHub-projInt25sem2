@@ -1,15 +1,35 @@
 
 /* HTML AND BODY GENERAL */
-body {
-    font-family: var(--poppins-font);
-}
-
 html, body {
     min-height: 100dvh;
 }
 
+body {
+    font-family: var(--poppins-font);
+}
+
+#main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main {
+    max-width: 2000px;
+}
+
 a {
     text-decoration: none;
+}
+
+p {
+    margin: 0.8rem 0;
+    line-height: 1.6;
+}
+
+span {
+    color: var(--green2);
+    font-weight: 700;
 }
 
 
@@ -31,12 +51,13 @@ header {
     margin-bottom: 1rem;
 
     border-bottom: 1px solid var(--gray);
+    box-shadow: 0px 1px 16px 0px var(--shadow);
 
     background-color: #fff;
 }
 
 .logo {
-    color: var(--dark2);
+    color: var(--green2);
     font-weight: 700;
     font-size: 15pt;
 }
@@ -144,4 +165,30 @@ footer {
     background-color: var(--light-gray);
 
     text-align: center;
+}
+
+
+
+/* BUTTON */
+
+/* general button */
+.btn {
+    padding: 0.6rem 3rem;
+
+    border-radius: 100px;
+}
+
+/* main button */
+.main-btn {
+    background-color: var(--dark2);
+
+    color: #fff;
+
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.main-btn:hover {
+    background-color: var(--dark1);
+
+    transform: translateY(-2px);
 }
