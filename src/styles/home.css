@@ -1,0 +1,74 @@
+
+h2 {
+    margin: 0.6rem 0;
+
+    color: var(--dark2);
+    font-size: 16pt;
+    font-weight: 600;
+}
+
+#hero, #aboutUs {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+    margin: 2rem 0;
+}
+
+#heroText {
+    order: 1;
+
+    width: 40%;
+}
+
+#heroText > h1 {
+    color: var(--dark2);
+    font-weight: 800;
+    font-size: 20pt;
+}
+
+#heroText > p {
+    padding: 2rem 0;
+}
+
+#heroImg {
+    order: 2;
+
+    width: 30%;
+}
+
+
+
+#aboutUsImg {
+    order: 1;
+
+    width: 30%;
+}
+
+#aboutUsText {
+    order: 2;
+
+    width: 40%;
+}
+
+
+/* RESPONSIVIDADE */
+@media (max-width: 768px) {
+    #hero, #aboutUs {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #heroText, #aboutUsText {
+        order: 1;
+        width: 85%;
+    }
+
+    #heroImg, #aboutUsImg {
+        order: 2;
+        margin: 2rem 0;
+        width: 80%;
+    }
+
+}
