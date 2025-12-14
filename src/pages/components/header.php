@@ -7,7 +7,7 @@ define('BASE_URL', '/quantumhub');
 ?>
 
 <header>
-    <a class="logo" href="index.php">QuantumHub</a>
+    <a class="logo" href="<?= BASE_URL ?>/index.php">QuantumHub</a>
 
     <nav>
         <a href="<?= BASE_URL ?>/index.php" class="<?= $paginaAtual == 'index.php' ? 'active' : '' ?>">Home</a>
