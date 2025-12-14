@@ -61,23 +61,23 @@
         <section id="howQhWorks">
             <h2>Como a QuantumHub Funciona</h2>
             <div class="qh-metodos-container">
-                <div class="qh-metodos">
+                <div class="qh-metodos-l">
                     <h3>Aprendizado Estruturado e Profundo</h3>
                     <p>Conteúdos criados com precisão técnica, atualizados conforme as demandas reais do mercado, desde fundamentos até tecnologias avançadas.</p>
                 </div>
-                <div class="qh-metodos">
+                <div class="qh-metodos-d">
                     <h3>Prática Orientada por Projetos</h3>
                     <p>Você aprende fazendo. Cada módulo inclui desafios, simulações e projetos aplicáveis, desenvolvidos para fortalecer habilidades práticas e portfólios profissionais.</p>
                 </div>
-                <div class="qh-metodos">
+                <div class="qh-metodos-l">
                     <h3>Mentoria Especializada e Responsiva</h3>
                     <p>Nossos mentores acompanham seu progresso, ajudam na solução de dúvidas, oferecem feedback e orientam seu caminho de evolução com segurança e clareza.</p>
                 </div>
-                <div class="qh-metodos">
+                <div class="qh-metodos-d">
                     <h3>Trilhas Flexíveis e Inteligentes</h3>
                     <p>Escolha trilhas específicas para desenvolvimento profissional, transição de carreira ou capacitação corporativa, sempre com foco em impacto e resultados.</p>
                 </div>
-                <div class="qh-metodos">
+                <div class="qh-metodos-l">
                     <h3>Comunidade Ativa de Networking</h3>
                     <p>Conecte-se com estudantes, especialistas e empresas. Compartilhe conhecimento, participe de discussões e avance junto com quem também está construindo o futuro digital.</p>
                 </div>
@@ -87,15 +87,17 @@
 
         <!-- Target Audience -->
         <section id="targetAudience">
-            <img src="./src/assets/">
-            <div>
+            <img id="targetAudienceImg" src="./src/assets/images/idea-img.svg">
+            <div id="targetAudienceText">
                 <h2>Para quem é a QuantumHub?</h2>
 
                 <p>Nossa arquitetura de aprendizado foi criada para impulsionar talentos em qualquer fase e atender diferentes perfis:</p>
 
-                <p><strong>Jovens e Iniciantes em TI:</strong> orientação prática e oportunidades reais.</p>
-                <p><strong>Profissionais em transição ou aperfeiçoamento:</strong> desenvolvimento avançado e estratégico.</p>
-                <p><strong>Empresas e equipes corporativas:</strong> capacitação estruturada, rigor técnico e acompanhamento de performance.</p>
+                <ul>
+                    <li><strong>Jovens e Iniciantes em TI:</strong> orientação prática e oportunidades reais.</li>
+                    <li><strong>Profissionais em transição ou aperfeiçoamento:</strong> desenvolvimento avançado e estratégico.</li>
+                    <li><strong>Empresas e equipes corporativas:</strong> capacitação estruturada, rigor técnico e acompanhamento de performance.</li>
+                </ul>
             </div>
         </section>
         <!-- End Target Audience -->
@@ -105,7 +107,7 @@
             <div class="call-action-container">
                 <h3>QuantumHub — Conectando você ao futuro da tecnologia.</h3>
                 <p>Evolua hoje. Torne-se protagonista do seu futuro digital com a <span>QuantumHub.</span></p>
-                <a><button type="button">Começar Agora</button></a>
+                <a href="./src/pages/login.php" class="btn call-action-btn">Começar Agora</a>
             </div>
         </section>
         <!-- End Call to Action -->
