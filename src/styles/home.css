@@ -53,6 +53,19 @@ h2 {
 }
 
 
+#whyUs {
+    padding: 2rem 10rem;
+
+    background-color: var(--light-gray);
+
+    text-align: center;
+}
+
+#whyUs > p {
+    margin-top: 1.5rem;
+}
+
+
 /* RESPONSIVIDADE */
 @media (max-width: 768px) {
     #hero, #aboutUs {
@@ -69,6 +82,12 @@ h2 {
         order: 2;
         margin: 2rem 0;
         width: 80%;
+    }
+
+    #whyUs {
+        max-width: 100%;
+
+        padding: 2rem 3rem;
     }
 
 }
