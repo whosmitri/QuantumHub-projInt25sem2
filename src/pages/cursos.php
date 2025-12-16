@@ -17,7 +17,11 @@
 <body>
     <?php include './components/header.php'; ?>
 
-    <h1>Todos os Cursos</h1>
+    <div id="main">
+    <main>
+        <section id="callForms"></section>
+    </main>
+    </div>
 
     <?php include './components/footer.php'; ?>
 </body>
