@@ -6,12 +6,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="/QuantumHub/assets/images/icon/favicon.ico">
 
-    <link rel="stylesheet" href="./src/style/reset.css">
-    <link rel="stylesheet" href="./src/style/global.css">
-    <link rel="stylesheet" href="./src/style/style.css">
-    <link rel="stylesheet" href="./src/style/home.css">
+    <link rel="stylesheet" href="/QuantumHub/src/style/reset.css">
+    <link rel="stylesheet" href="/QuantumHub/src/style/global.css">
+    <link rel="stylesheet" href="/QuantumHub/src/style/style.css">
+    <link rel="stylesheet" href="/QuantumHub/src/style/home.css">
 
     <title>Home - QuantumHub</title>
 </head>
