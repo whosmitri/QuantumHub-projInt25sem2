@@ -3,7 +3,7 @@
 // define a página atual (ex: index.php, cursos.php)
 $paginaAtual = basename($_SERVER['PHP_SELF']);
 
-define('BASE_URL', '/quantumhub');
+require_once __DIR__ . '/src/config/base_url.php';
 ?>
 
 <header>

@@ -3,14 +3,9 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <link rel="icon" type="image/x-icon" href="/QuantumHub/assets/images/icon/favicon.ico">
 
-    <link rel="stylesheet" href="/QuantumHub/src/style/reset.css">
-    <link rel="stylesheet" href="/QuantumHub/src/style/global.css">
-    <link rel="stylesheet" href="/QuantumHub/src/style/style.css">
+    <?php include './src/config/base_url.php'; ?>
+    
     <link rel="stylesheet" href="/QuantumHub/src/style/home.css">
 
     <title>Home - QuantumHub</title>
