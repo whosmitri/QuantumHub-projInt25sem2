@@ -1,0 +1,87 @@
+
+#callForms {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 8vh 5vw;
+}
+
+.call-forms-container {
+    width: 90%;
+    box-sizing: border-box;
+
+    padding: 6vh 3vw;
+
+    border-radius: 20px;
+
+    background-color: var(--dark2);
+    color: #fff;
+}
+
+.call-forms-container > h1 {
+    color: var(--green1);
+    font-size: 14pt;
+    font-weight: 700;
+}
+
+
+
+.cursos-tudo-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: stretch;
+    flex-wrap: wrap;
+
+    margin: 3vh 5vw;
+}
+
+.curso-card {
+    flex: 1 1 250px;
+
+    display: flex;
+    flex-direction: column;
+    
+    margin: 2vh 3vw;
+    padding: 4vh 2vw 2vh 2vw;
+    box-sizing: border-box;
+
+    min-height: 130px;
+    max-width: 400px;
+
+    border-radius: 12px;
+
+    background-color: var(--light-gray);
+}
+
+.curso-card > h3 > a {
+    color: var(--dark1);
+}
+
+.curso-card > p {
+    margin-top: auto;
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 768px) {
+    #callForms {
+        margin: 8vh 0;
+    }
+
+    .call-forms-container {
+        width: 85%;
+    }
+
+    .cursos-tudo-container {
+        justify-content: center;
+        margin: 3vh 0;
+    }
+
+    .curso-card {
+        flex: 1 1 auto;
+
+        max-width: 85%;
+
+        margin: 2vh 0;
+    }
+}
