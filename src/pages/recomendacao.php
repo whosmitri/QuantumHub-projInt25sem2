@@ -8,8 +8,7 @@ $cursos = [
     "Cloud" => "Curso de Cloud Computing"
 ];
 
-//$area = $_GET['area'];
-$area = 'Cibersegurança';
+$area = $_GET['area'];
 
 $recomendado = $cursos[$area];
 ?>
