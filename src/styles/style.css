@@ -1,21 +1,31 @@
 
 /* HTML AND BODY GENERAL */
 html, body {
-    min-height: 100dvh;
+    height: 100dvh;
 }
 
 body {
+    display: flex;
+    flex-direction: column;
+
     background-color: var(--light-blue);
     font-family: var(--poppins-font);
 }
 
+header,
+footer {
+    flex-shrink: 0;
+}
+
 #main {
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 main {
+    height: 100%;
     width: 100%;
     max-width: 2000px;
     box-shadow: 0px 0px 20px var(--shadow);

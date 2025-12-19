@@ -3,15 +3,11 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <?php include './components/head.php'; ?>
 
-    <link rel="stylesheet" href="../style/reset.css">
-    <link rel="stylesheet" href="../style/global.css">
-    <link rel="stylesheet" href="../style/style.css">
-    <link rel="stylesheet" href="../style/home.css">
+    <link rel="stylesheet" href="../style/cursos.css">
 
-    <title>Home - QuantumHub</title>
+    <title>Cursos - QuantumHub</title>
 </head>
 
 <body>

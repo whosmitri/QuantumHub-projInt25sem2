@@ -1,3 +1,3 @@
 <?php
-define('BASE_URL', '/quantumhub');
+define('BASE_URL', '/QuantumHub-projInt25sem2');
 ?>

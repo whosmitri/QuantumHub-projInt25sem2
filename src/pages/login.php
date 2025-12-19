@@ -1,6 +1,6 @@
 <?php
-session_start();
-require_once "../../config/db/conexao.php";
+/*session_start();
+require_once "../../config/db/conexao.php";*/
 
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $email = trim($_POST["email"] ?? "");
@@ -28,20 +28,31 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <title>Login</title>
+    <?php include './components/head.php'; ?>
+
+    <link rel="stylesheet" href="../styles/login_registrar.css">
+
+    <title>Login - QuantumHub</title>
 </head>
 <body>
 
-<?php if (!empty($erro)) echo "<p style='color:red'>$erro</p>"; ?>
+    <?php include './components/header.php'; ?>
 
-<form method="POST">
-    <input type="email" name="email" placeholder="Email" required>
-    <input type="password" name="password" placeholder="Senha" required>
-    <button type="submit">Entrar</button>
-</form>
+    <div id="main">
+    <main>
+        <?php if (!empty($erro)) echo "<p style='color:red'>$erro</p>"; ?>
 
-<a href="registrar.php">Criar conta</a>
+        <form method="POST">
+            <input type="email" name="email" placeholder="Email" required>
+            <input type="password" name="password" placeholder="Senha" required>
+            <button type="submit">Entrar</button>
+        </form>
+
+        <a href="registrar.php">Criar conta</a>
+    </main>
+    </div>
+
+    <?php include './components/footer.php'; ?>
 
 </body>
 </html>
