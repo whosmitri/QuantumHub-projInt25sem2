@@ -19,7 +19,7 @@
             <div class="call-forms-container">
                 <h1>Descubra o curso ideal para você!</h1>
                 <p>A tecnologia oferece muitos caminhos — escolher o certo faz toda a diferença.</p>
-                <a class="btn call-action-btn">Descobrir meu curso ideal</a>
+                <a class="btn call-action-btn" href="formulario.php">Descobrir meu curso ideal</a>
             </div>
         </section>
 
