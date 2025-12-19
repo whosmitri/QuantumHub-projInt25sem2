@@ -1,0 +1,69 @@
+/* HTML AND BODY GENERAL */
+html, body {
+    height: 100dvh;
+}
+
+#main {
+    height: 100%;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    height: 100%;
+}
+
+.form-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+
+    width: 60%;
+}
+
+.left-form {
+    order: 1;
+    width: 40%;
+}
+
+.left-form > h1 {
+    color: var(--green2);
+    font-size: 20pt;
+    font-weight: 600;
+}
+
+.left-form > p {
+    margin: 2vh 0;
+}
+
+.right-form {
+    order: 2;
+    width: 50%;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 10px;
+}
+
+.right-form > label {
+    color: var(--dark1);
+    font-size: 12pt;
+}
+
+.right-form > input {
+    width: 100%;
+
+    padding: 6px 8px;
+
+    border-radius: 100px;
+}
+
+.right-form > input:focus {
+    outline: 2px solid var(--green2);
+}
