@@ -3,7 +3,7 @@
 // define a página atual (ex: index.php, cursos.php)
 $paginaAtual = basename($_SERVER['PHP_SELF']);
 
-require_once __DIR__ . '/src/config/base_url.php';
+require_once __DIR__ . '/../../config/base_url.php';
 ?>
 
 <header>
