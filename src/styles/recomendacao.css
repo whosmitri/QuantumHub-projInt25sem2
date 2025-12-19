@@ -23,6 +23,6 @@ h1 {
     font-weight: 600;
 }
 
-a {
+main > a {
     margin: 4vh 0;
 }
