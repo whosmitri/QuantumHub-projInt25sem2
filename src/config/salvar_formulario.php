@@ -1,5 +1,5 @@
 <?php
-include 'db/conexao.php';
+include '../..db/conexao.php';
 
 $area = $_POST['area'];
 $nivel = $_POST['nivel'];
