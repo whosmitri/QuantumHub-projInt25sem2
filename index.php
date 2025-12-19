@@ -4,7 +4,7 @@
 <html lang="pt-br">
 <head>
 
-    <?php include './src/config/base_url.php'; ?>
+    <?php include './src/pages/components/head.php'; ?>
     
     <link rel="stylesheet" href="/QuantumHub/src/style/home.css">
 
