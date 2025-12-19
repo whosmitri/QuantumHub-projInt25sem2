@@ -1,11 +1,11 @@
-<?php include 'db/conexao.php'; ?>
+<?php include '../../config/db/conexao.php'; ?>
 
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <?php include './components/head.php'; ?>
 
-    <link rel="stylesheet" href="../style/cursos.css">
+    <link rel="stylesheet" href="../styles/cursos.css">
 
     <title>Cursos - QuantumHub</title>
 </head>

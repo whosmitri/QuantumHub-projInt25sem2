@@ -1,7 +1,7 @@
 
 /* HTML AND BODY GENERAL */
 html, body {
-    height: 100dvh;
+    min-height: 100dvh;
 }
 
 body {
@@ -18,14 +18,12 @@ footer {
 }
 
 #main {
-    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 main {
-    height: 100%;
     width: 100%;
     max-width: 2000px;
     box-shadow: 0px 0px 20px var(--shadow);
@@ -194,6 +192,8 @@ footer {
     padding: 0.6rem 3rem;
 
     border-radius: 100px;
+
+    cursor: pointer;
 }
 
 /* main button */
@@ -223,6 +223,19 @@ footer {
     background-color: var(--green2);
 
     color: var(--light-gray);
+
+    transform: translateY(-2px);
+}
+
+.form-btn {
+    margin: 10px 0;
+    background-color: var(--green1);
+
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.form-btn:hover {
+    background-color: var(--green2);
 
     transform: translateY(-2px);
 }

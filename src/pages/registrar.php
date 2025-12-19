@@ -1,5 +1,5 @@
 <?php
-/*require_once "../../config/db/conexao.php";*/
+require_once "../../config/db/conexao.php";
 
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $email = trim($_POST["email"] ?? "");
@@ -40,24 +40,30 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 <head>
     <?php include './components/head.php'; ?>
 
-    <link rel="stylesheet" href="../style/login_registrar.css">
+    <link rel="stylesheet" href="../styles/login_registrar.css">
 
     <title>Registrar - QuantumHub</title>
 </head>
 <body>
-    <?php include './components/header.php'; ?>
 
     <div id="main">
     <main>
         <?php if (!empty($erro)) echo "<p style='color:red'>$erro</p>"; ?>
 
-        <form method="POST">
-            <input type="email" name="email" placeholder="Email" required>
-            <input type="password" name="password" placeholder="Senha" required>
-            <button type="submit">Registrar</button>
-        </form>
-
-        <a href="login.php">Já tenho conta</a>
+        <div class="form-container">
+            <div class="left-form">
+                <img src="../assets/images/login-img.svg">
+            </div>
+            <div class="right-form">
+                <h1>Registre-se!</h1>
+                <form method="POST">
+                    <input type="email" name="email" placeholder="Email" required>
+                    <input type="password" name="password" placeholder="Senha" required>
+                    <button type="submit" class="btn form-btn">Registrar</button>
+                </form>
+                <a href="login.php">Já tenho conta</a>
+            </div>
+        </div>
     </main>
     </div>
 

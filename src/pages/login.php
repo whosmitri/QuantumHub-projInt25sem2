@@ -1,6 +1,6 @@
 <?php
-/*session_start();
-require_once "../../config/db/conexao.php";*/
+session_start();
+require_once "../../config/db/conexao.php";
 
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $email = trim($_POST["email"] ?? "");
@@ -36,19 +36,24 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 </head>
 <body>
 
-    <?php include './components/header.php'; ?>
-
     <div id="main">
     <main>
         <?php if (!empty($erro)) echo "<p style='color:red'>$erro</p>"; ?>
 
-        <form method="POST">
-            <input type="email" name="email" placeholder="Email" required>
-            <input type="password" name="password" placeholder="Senha" required>
-            <button type="submit">Entrar</button>
-        </form>
-
-        <a href="registrar.php">Criar conta</a>
+        <div class="form-container">
+            <div class="left-form">
+                <img src="../assets/images/login-img.svg">
+            </div>
+            <div class="right-form">
+                <h1>Faça Login!</h1>
+                <form method="POST">
+                    <input type="email" name="email" placeholder="Email" required>
+                    <input type="password" name="password" placeholder="Senha" required>
+                    <button type="submit" class="btn form-btn">Entrar</button>
+                </form>
+                <a href="registrar.php">Criar conta</a>
+            </div>
+        </div>
     </main>
     </div>
 
