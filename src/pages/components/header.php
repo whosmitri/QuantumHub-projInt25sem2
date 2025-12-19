@@ -15,7 +15,7 @@ require_once __DIR__ . '/../../config/base_url.php';
         <a href="<?= BASE_URL ?>/src/pages/sobre.php" class="<?= $paginaAtual == 'sobre.php' ? 'active' : '' ?>">Sobre Nós</a>
     </nav>
 
-    <a href="login.php">
+    <a href="<?= BASE_URL ?>/src/pages/login.php">
         <button class="btn-login" type="button">Entrar</button>
     </a>
 </header>
